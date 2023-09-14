@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+:root, html, body {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_items li {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_text {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero_text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero_text p {
+    font-weight: 600;
+    color: #222;
+}
+
+button {
+    background: #017143;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: max-content;
+}
+
+.bold_text {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 800px;
+}
+
+.main_image {
+    width: 400px;
+}
+
+.options {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.options img {
+    width: 70px;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.options img:hover {
+    transform: translateY(-20px);
+}
+
+.circle {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background-color: #017143;
+    border-radius: 50%;
+    top: 20%;
+    right: -50%;
+    z-index: -1;
+    transition-duration: 1000ms;
+}
